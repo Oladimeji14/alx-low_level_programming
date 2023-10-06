@@ -4,20 +4,29 @@
 
 /**
  * main - Entry point
+ *
+ * Task that print negative and positive number with zero
+ *
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int n;
+	int num;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%d is postive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	else
-		printf("%d is negative\n", n);
+	num = rand() - RAND_MAX / 2;
+	if (num > 0)
+	{
+		printf("%i is postive\n", num);
+	}
+	else if (num == 0)
+	{
+		printf("%i is zero\n", num);
+	}
+	else if (num < 0)
+	{
+		printf("%i is negative\n", num);
+	}
 	return (0);
 }
