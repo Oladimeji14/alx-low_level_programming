@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main -Entry point of 0-putchar
+ * main - Entry point of 0-putchar
  *
  * Retrun: Always zero (0)
  */
