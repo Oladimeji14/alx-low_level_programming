@@ -3,7 +3,7 @@
 /**
  * main - Entry point of 0-putchar
  *
- * Retrun: Always zero (0)
+ * Retrun: zero (0)
  */
 
 int main(void)
