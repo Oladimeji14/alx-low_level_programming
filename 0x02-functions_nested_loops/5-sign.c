@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - Printing a sign number
+ * print_sign - Print a sign number
  * @n: The number to be confirmed
- * Return: 1 for positive number, -1 for negative number or zero for anything else
+ * Return: 1 for positive num, -1 for negative num or zero for anything else
  */
 
 int print_sign(int n)
@@ -25,4 +25,5 @@ int print_sign(int n)
 	return (0);
 	}
 }
+
 
