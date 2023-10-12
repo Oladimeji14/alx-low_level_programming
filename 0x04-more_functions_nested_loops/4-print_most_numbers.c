@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
   * print_most_numbers - Produe the digits since 0 up to 9
