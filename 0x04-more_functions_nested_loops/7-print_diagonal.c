@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_diagonal - Prints a  lines according parameter
+  * print_diagonal - Prints a  lines according to the value 
   * @n: The value of times to print  lines
   *
   * Return: empty
