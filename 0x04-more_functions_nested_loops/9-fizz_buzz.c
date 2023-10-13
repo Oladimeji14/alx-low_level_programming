@@ -8,28 +8,28 @@
   */
 int main(void)
 {
-	int x;
+	int qad;
 
-	for (x = 1; x <= 100; x++)
+	for (qad = 1; qad <= 100; qad++)
 	{
-		if ((x % 3 == 0) && (x % 5 == 0))
+		if ((qad % 3 == 0) && (qad % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
-		else if (x % 3 == 0)
+		else if (qad % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (x % 5 == 0)
+		else if (qad % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d", qad);
 		}
 
-		if (x != 100)
+		if (qad != 100)
 		{
 			printf(" ");
 		}
