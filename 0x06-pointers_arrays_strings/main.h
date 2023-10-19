@@ -1,10 +1,5 @@
 #ifndef MAIN_H
-#define MAINN_H
-
-/**
- * File: main.h
- * Desc: Header file containing prototypes for all functions
- */
+#define MAIN_H
 
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
