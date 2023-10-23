@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * _strpbrk - Entry point for any of a set of bytes
-  * @s: Input string
-  * @accept: Input characters
+  * _strpbrk - entry point of any set of bytes
+  * @s: input string
+  * @accept: input characters
   *
-  * Return: Always 0 
+  * Return: Always 0
   */
 char *_strpbrk(char *s, char *accept)
 {
