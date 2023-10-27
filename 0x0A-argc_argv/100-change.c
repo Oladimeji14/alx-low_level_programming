@@ -6,7 +6,7 @@
  * @argc: Input
  * @argv: Input
  *
- * Return: Output 
+ * Return: Output
  */
 int main(int argc, char *argv[])
 {
