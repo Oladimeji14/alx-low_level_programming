@@ -1,27 +1,20 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-  * main - Prints the multiplication of two args numbers
+  * main - Prints all the args content
   * @argc: Input
   * @argv: Input
+  *
   * Return: Always zero
   */
 int main(int argc, char *argv[])
 {
-	int qad = 0, sal = 0;
+	int qad;
 
-	if (argc == 3)
+	for (qad = 0; qad < argc; qad++)
 	{
-		qad = atoi(argv[1]);
-		sal = atoi(argv[2]);
-		printf("%d\n", n1 * n2);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
+		printf("%s\n", argv[qad]);
 	}
 
 	return (0);
