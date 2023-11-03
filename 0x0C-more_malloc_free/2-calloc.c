@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * _calloc - allocates memory for an array, 
+  * _calloc - Allocation of array
   * @nmemb: Input
   * @size: Input
   *
@@ -11,22 +11,22 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int qad = 0, l = 0;
-	char *m;
+	char *sal;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	l = nmemb * size;
-	m = malloc(l);
+	sal = malloc(l);
 
-	if (m == NULL)
+	if (sal == NULL)
 		return (NULL);
 
 	while (qad < l)
 	{
-		m[qad] = 0;
+		sal[qad] = 0;
 		qad++;
 	}
 
-	return (m);
+	return (sal);
 }
