@@ -1,9 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 /**
   * struct dog - Dog description
-  * @name: name given to the dog.
+  * @name: The name given of the dog.
   * @age: The age of the dog.
   * @owner: The owner of the dog.
   *
