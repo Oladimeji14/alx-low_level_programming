@@ -6,7 +6,6 @@
   * @name: The name given of the dog.
   * @age: The age of the dog.
   * @owner: The owner of the dog.
-  *
   * Description: The structure of a dog.
   */
 struct dog
