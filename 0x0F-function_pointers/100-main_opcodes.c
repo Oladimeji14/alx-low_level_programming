@@ -1,39 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <udis86.h>
 
 /**
-  * main - Most hacker
-  * @argc: Hexadecimal
-  * @argv: Input
-  *
-  * Return: Output
-  */
+ * main - Prints the opcodes
+ * @argc: Input
+ * @argv: Input
+ *
+ * Return: Output
+ */
 int main(int argc, char *argv[])
 {
-	ud_t ud_obj;
-	int sal = 0, qad = 0;
+	int b, i;
+	int (*a)(int, char **) = main;
+	unsigned char opcode;
 
-	if (argc == 2)
+	if (argc != 2)
 	{
-		sal = atoi(argv[1]);
-
-		if (sal < 0)
-		{
-			printf("Error\n");
-			exit(2);
-		}
-
-		ud_unit(&ud_obj);
-		ud_set_input_buffer(&ud_obj, argv[1], sal);
-		ud_set_mode(&ud_obj, 64);
-		ud_set_syntax(&ud_obj, UD_SYN_INTEL);
-
-		while (ud_disassemble(&ud_obj))
-		{
-			printf("\t%s\n", ud_insn_hex(&ud_obj));
-		}
+		printf("Error\n");
+		exit(1);
 	}
+
+	b = atoi(argv[1]);
+
+	if (b < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	for (i = 0; i < b; i++)
+	{
+		opcode = *(unsigned char *)a;
+		printf("%.2x", opcode);
+
+		if (i == b - 1)
+			continue;
+		printf(" ");
+
+		a++;
+	}
+
+	printf("\n");
 
 	return (0);
 }
