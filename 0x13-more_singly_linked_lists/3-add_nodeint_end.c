@@ -3,37 +3,38 @@
 #include "lists.h"
 
 /**
-  * add_nodeint_end - Adds node to the end 
-  * @head: The head 
-  * @n: The number
+  * add_nodeint_end - Addsnode to end oflist
+  * @head: The head
+  * @n: The value
+  *
   * Return: Null
   */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *qad, *sal;
+	listint_t *a, *b;
 
 	if (head)
 	{
-		qad = malloc(sizeof(listint_t));
-		if (qad == NULL)
+		a = malloc(sizeof(listint_t));
+		if (a == NULL)
 			return (NULL);
 
-		qad->n = n;
-		qad->next = NULL;
+		a->n = n;
+		a->next = NULL;
 
 		if (*head == NULL)
 		{
-			*head = qad;
+			*head = a;
 			return (*head);
 		}
 		else
 		{
-			sal = *head;
-			while (sal->next)
-				sal = sal->next;
+			b = *head;
+			while (b->next)
+				b = b->next;
 
-			sal->next = qad;
-			return (sal);
+			b->next = a;
+			return (b);
 		}
 	}
 
