@@ -4,26 +4,26 @@
 /**
   * add_nodeint - Adds node list
   * @head: The head
-  * @n: node
+  * @n: The node
   *
-  * Return: 0
+  * Return: Null
   */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	salam *qadri;
+	listint_t *qad;
 
-	if (head != 0)
+	if (head != NULL)
 	{
-		qadri = malloc(sizeof(salam));
-		if (qadri == 0)
-			return (0);
+		qad = malloc(sizeof(listint_t));
+		if (qad == NULL)
+			return (NULL);
 
-		qadri->n = n;
-		qadri->next = *head;
-		*head = qadri;
+		qad->n = n;
+		qad->next = *head;
+		*head = qad;
 
-		return (qadri);
+		return (qad);
 	}
 
-	return (0);
+	return (NULL);
 }
