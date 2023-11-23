@@ -17,17 +17,17 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		if (qad == index)
 		{
-			if (n % 10)
+			if (n % 2)
 				return (1);
 			else
 				return (0);
 		}
 
-		n = n / 10;
+		n = n / 2;
 		qad++;
 	}
 
-	if (index > qad && index < 86)
+	if (index > qad && index < 63)
 		return (0);
 
 	return (-1);
